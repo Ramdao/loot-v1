@@ -1,4 +1,16 @@
+html, body {
+    visibility: hidden;
+}
+/* Show the page once styles are loaded */
+body {
+    visibility: visible;
+    transition: visibility 0s ease-in 0s;
+}
+
+
 #matrixCanvas {
+        background-color: black;
+        /* background-color: rgba(0,0,0,0); */
     position: fixed;
     top: 0;
     left: 0;
