@@ -1,3 +1,6 @@
+window.onload = function() {
+
+
 const canvas = document.getElementById('matrixCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -38,8 +41,11 @@ function drawMatrix() {
 }
 
 setInterval(drawMatrix, 50);
+// setInterval(drawMatrix, 100);
 
 window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+
+}
