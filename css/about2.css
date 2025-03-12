@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(45deg, #000000, #1a1a1a, #333333);
+    background-size: 400% 400%;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    font-family: 'Lato', serif;
+    font-size: 30px;
+    animation: fadeIn 1.5s ease-in-out, animateBackground 10s infinite alternate ease-in-out;
+}
+
+/* Animated background */
+@keyframes animateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* Slide-in animation for navigation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.home-link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.home-link:hover {
+    color: #f8c202;
+    transform: scale(1.1);
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 45px;
+    animation: fadeIn 1.5s ease-in-out;
+    
+    /* Gradient Text */
+    background: linear-gradient(90deg, #e4ede9, #2830ce, #2bcc9e, #e4ede9);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     animation: gradientAnimation 6s infinite linear; 
+}
+
+/* Gradient animation effect */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+    
+}
+
+/* Animation for text container */
+.text-container {
+    margin-top: 15px;
+    width: 90%;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2830ce, #2bcc9e);
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transform: scale(0.9);
+    animation: popIn 1s ease-in-out forwards;
+}
+
+/* Pop-in animation */
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+p {
+    font-family: 'Lato', serif;
+    margin: 10px;
+    font-size: 24px;
+    line-height: 1.5;
+    animation: fadeInUp 1.5s ease-in-out;
+
+    /* Gradient Text */
+    background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff , #ffffff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+/* Smooth fade-in-up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

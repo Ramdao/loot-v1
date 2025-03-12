@@ -1,11 +1,7 @@
-window.onload = function() {
-
-function getStarted(){
+function getStarted() {
     window.location.href = "getStarted.html";
 }
 
-function learnMore(){
+function learnMore() {
     window.location.href = "learnMore.html";
-}
-
 }
