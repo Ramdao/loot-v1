@@ -89,7 +89,7 @@ nav {
     align-items: center; /* Vertically aligns the content inside */
     padding: 10px 20px; /* Adds padding for spacing */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for a subtle effect */
-    
+    padding-bottom: 50px;
     
 }
 
