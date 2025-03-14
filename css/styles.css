@@ -107,7 +107,6 @@ p{
 nav {
     display: flex;
     justify-content: flex-end;
-    background-color: rgba(0, 0, 0, 0.85); /* Transparent black background */
     height: 160px;
     position: relative; /* Fixes the navbar at the top of the page */
     top: 0; /* Aligns it at the very top */
@@ -332,7 +331,6 @@ button:hover::before {
     position: absolute;
     top:200%;
     border-style: solid;
-    height: 260px;
     width: 99%;
     color: #2830CE;
 }
