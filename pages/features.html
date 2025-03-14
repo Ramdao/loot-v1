@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    
+    <link rel="stylesheet" href="/css/about.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- JavaScript -->
+    <script src="/js/matrix.js"></script>
+
+    <style>
+         /* Accordion styles */
+         .accordion-button {
+            background-color: #2830CE;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .accordion-button:hover {
+            background-color: #1f2b8d;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            background-color: #f0f0f0;
+            color: #333;
+            border-top: 1px solid #ccc;
+        }
+
+        /* Flexbox container for the iframe nodes */
+        .nodes {
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <canvas id="matrixCanvas"></canvas>
+    
+
+    <nav>
+        <img src="../assets/img/Loot_Horizontal_Logo 1.png" class="logo-top">
+        <a href="../index.html" class="home-link">Home</a>
+        <a href="about.html" class="home-link">About</a>
+        <a href="features.html" class="home-link">Features</a>
+        <a href="resources.html" class="home-link">Resources</a>
+    </nav>
+    <h1>Features</h1>
+
+    
+    
+
+    <div class="text-container">
+        <p>
+            <!-- <strong>What is Loot?</strong><br> -->
+            <strong>1. Decentralized</strong><br> 
+            Loot Crypto Coin is a fully decentralized cryptocurrency, which means no central authority controls the network. This allows for a trustless environment where users can interact directly with one another, ensuring transparency and autonomy in every transaction.
+        </p>
+    </div>
+    <div class="text-container">
+        <p>
+            <strong>2. Node Hosting</strong> <br>
+            Anyone can participate in the Loot Crypto Coin network by hosting a node. By hosting a node, users help secure the network and validate transactions, contributing to the overall robustness of the system. This open participation empowers individuals to engage directly in the decentralized ecosystem.
+        </p>
+    </div>
+    <div class="text-container">
+        <p>
+            <strong>3. Security</strong><br> 
+            Security is at the core of Loot Crypto Coin. Our blockchain ensures all transactions are cryptographically secured, and the decentralized network eliminates single points of failure. Each transaction is validated by nodes, reducing the chances of fraud or attacks.
+        </p>
+    </div>
+    <div class="text-container">
+        <p>
+                <strong>4. Peer-to-Peer Transactions</strong><br>
+            Loot Crypto Coin operates on a peer-to-peer network, enabling direct transactions between users without intermediaries. This ensures lower transaction fees and quicker processing times, while also allowing for greater privacy and control over user funds.
+        </p>
+    </div>
+    <!-- Accordion for embedded URLs -->
+    <div class="accordion" style="display: grid; justify-content: center;">
+        <div class="accordion-item" style="width: 600px;">
+            <button class="accordion-button">Alpha Loot</button>
+            <div class="accordion-content" style="justify-content: center;">
+                <iframe src="https://alpha.loot.brickmmo.com/" width="500px" height="600px" frameborder="0" style="border: none;"></iframe>
+            </div>
+        </div>
+        <div class="accordion-item" style="width: 600px;">
+            <button class="accordion-button">Bravo Loot</button>
+            <div class="accordion-content" style="justify-content: center;">
+                <iframe src="https://bravo.loot.brickmmo.com/" width="500px" height="600px" frameborder="0" style="border: none;"></iframe>
+            </div>
+        </div>
+        <div class="accordion-item" style="width: 600px;">
+            <button class="accordion-button">Charlie Loot</button>
+            <div class="accordion-content" style="justify-content: center;">
+                <iframe src="https://charlie.loot.brickmmo.com/" width="500px" height="600px" frameborder="0" style="border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+        <!-- <div class="nodes" style="align-content: center;justify-content: center;display: flex; flex-direction: row> -->
+        <div class="nodes">
+          <!-- Embed the external URL inside an iframe -->
+          <div class="iframe-container">
+
+
+
+
+          </div>
+        </div>
+
+</body>
+
+<footer class="footer">
+  <div class="icon-footer">
+    <img src="../assets/img/Loot_Vertical_Logo__1_-removebg-preview 1.png" class="logo-bottom">
+  </div>
+    
+  <div class="footer-links">
+    <ul>
+      <li><strong>Features</strong>
+          <ul>
+              <li><a href="index.html">Loot Home</a></li>
+              <li><a href="#">Nodes</a></li>
+              <li><a href="FAQ.html">The FAQs</a></li>
+          </ul>
+      </li>
+      <li><strong>Contact</strong>
+          <ul>
+              <li><a href="#">Journey</a></li>
+              <li><a href="about.html">What is Loot?</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="contributors.html">Contributors</a></li>
+              <li><a href="https://sandbox.brickmmo.com">BrickMMO</a></li>
+          </ul>
+      </li>
+      <li><strong>Resources</strong>
+          <ul>
+              <li><a href="#">The Fund</a></li>
+              <li><a href="#">White Paper</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Privacy</a></li>
+          </ul>
+      </li>
+    </ul>
+  </div>
+    
+</footer>
+
+   <!-- jQuery for accordion -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+       $(document).ready(function() {
+           $(".accordion-button").click(function() {
+               $(this).next(".accordion-content").slideToggle("slow");
+               $(".accordion-content").not($(this).next()).slideUp("slow");
+           });
+       });
+   </script>
+</html>
