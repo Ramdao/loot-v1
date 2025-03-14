@@ -16,8 +16,20 @@ const drops = new Array(columns).fill(1);
 // Custom Matrix Colors
 const colors = ['#e4ede9', '#2830ce', '#2bcc9e', '#e4ede9'];
 
+let mouseOver = false;
+
+// Event listener to detect mouse hover over the canvas
+canvas.addEventListener('mousemove', () => {
+    mouseOver = true;
+});
+
+// Event listener to detect when the mouse leaves the canvas
+canvas.addEventListener('mouseout', () => {
+    mouseOver = false;
+});
+
 function drawMatrix() {
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.1)'; // Fade effect
+    ctx.fillStyle = mouseOver ? 'rgba(0, 0, 0, 0.1)' : 'rgba(0, 0, 0, 0.1)'; // Fade effect
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.font = `${fontSize}px monospace`;
